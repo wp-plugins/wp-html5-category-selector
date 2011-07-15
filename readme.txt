@@ -1,6 +1,6 @@
 === WP HTML5 Category Selector ===
 Contributors: Rogem002
-Donate link: http://www.fullondesign.co.uk/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BHGJ7B3ZWK9L8
 Tags: html5,categories,filter,post,category
 Requires at least: 3.2.1
 Tested up to: 3.2.1
