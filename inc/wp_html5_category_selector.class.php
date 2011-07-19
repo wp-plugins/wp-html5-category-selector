@@ -9,8 +9,11 @@ class wp_html5_category_selector {
 	
 	// Add the required JavaScript and CSS
 	public function admin_head(){
+		wp_register_script('wp_html5_category_selector', WP_PLUGIN_URL . '/wp-html5-category-selector/wp-html5-category-selector.js', false, false, true);
+		wp_register_style('wp_html5_category_selector', WP_PLUGIN_URL . '/wp-html5-category-selector/admin.css');
+		
 		wp_enqueue_script('jquery');
-		wp_register_style('wp_html5_category_selector', WP_PLUGIN_URL . '/wp-html5-category-selector/admin.css' );
+		wp_enqueue_script('wp_html5_category_selector');
 		wp_enqueue_style('wp_html5_category_selector');
 	}
 	
@@ -37,46 +40,7 @@ class wp_html5_category_selector {
 	public function add_html5category_box(){
 		?>
 		<p><?php _e('You shouldn\'t see this. This box contains the JavaScript to add the filter box.', 'wp_html5_category_selector'); ?></p>
-		<script type="text/javascript">
-		//<![CDATA[
-		(function($){
-		
-		$(document).ready(function() {
-			function updateFiltered(){
-				
-				// If the field is empty, show everything.
-				if($("#filterCats").val() == ''){
-					$("#categorydiv .selectit").show();
-					return true;
-				}
-				
-				// Cycle through the options. Hide those without the text the user inputted.
-				$("#categorydiv .selectit").each(function(){
-					if($(this).text().toLowerCase().indexOf($("#filterCats").val().toLowerCase()) >= 0){
-						$(this).show();
-					} else {
-						$(this).hide();
-					}
-				});
-			}
-		
-			// Add the filter input
-			$("#category-all").after('<div id="category-filter"><label><?php _e('Filter', 'wp_html5_category_selector'); ?>: <input type="text" id="filterCats" placeholder="<?php _e('Type to filter', 'wp_html5_category_selector'); ?>" /></label> <a class="clearThis">Clear</a></div>');
-			
-			// The listners
-			$("#filterCats").keyup(updateFiltered);
-			$("#filterCats").mouseout(updateFiltered);
-			
-			// Support the clear button
-			$("#category-filter .clearThis").click(function(){
-				$("#filterCats").val('');
-				$("#filterCats").trigger('keyup');
-			});
-		});
-
-		})(jQuery);
-		//]]>
-		</script>
+		<div id="category-filter"><label><?php _e('Filter', 'wp_html5_category_selector'); ?>: <input type="text" id="filterCats" placeholder="<?php _e('Type to filter', 'wp_html5_category_selector'); ?>" /></label> <a class="clearThis">Clear</a></div>
 		<?php
 	}
 }
