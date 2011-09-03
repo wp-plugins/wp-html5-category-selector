@@ -29,7 +29,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 // Define the variables used in the plugin.
-define('wp_html5_category_selector_version', '1.0.3');
+define('wp_html5_category_selector_version', '1.0.2');
 
 // Set of up localisation
 load_theme_textdomain('wp_html5_category_selector');
