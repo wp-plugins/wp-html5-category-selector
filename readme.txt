@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: html5,categories,filter,post,category
 Requires at least: 3.2.1
 Tested up to: 3.2.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Adds a filter input field to the category box on the add/edit post page.
 
@@ -41,6 +41,9 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 
 == Changelog ==
 
+= 1.0.3 =
+* Making it work for app themes, specifically classipress.
+
 = 1.0.2 =
 * Adding support for custom post types & tidying up code a little.
 
@@ -51,6 +54,9 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 * Inital Release
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Not big need to update, unless you using it on app themes.
 
 = 1.0.2 =
 Support for custom post types.

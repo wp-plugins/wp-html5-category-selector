@@ -17,7 +17,7 @@
 	}
 	
 	// If it can find the element on the page, it will run.
-	if($('#category-filter').length > 0){
+	if($('#category-all').length > 0){
 		// Add the filter input
 		$("#category-all").after($('#category-filter'));
 			
