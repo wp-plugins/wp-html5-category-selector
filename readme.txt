@@ -41,8 +41,8 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 
 == Changelog ==
 
-= 1.0.3 =
-* Making it work for app themes, specifically classipress.
+== 1.0.3 =
+* Making it work for older version of WP.
 
 = 1.0.2 =
 * Adding support for custom post types & tidying up code a little.
@@ -56,7 +56,7 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 == Upgrade Notice ==
 
 = 1.0.3 =
-Not big need to update, unless you using it on app themes.
+No big need to update.
 
 = 1.0.2 =
 Support for custom post types.
