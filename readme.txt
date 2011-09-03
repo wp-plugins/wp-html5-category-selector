@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: html5,categories,filter,post,category
 Requires at least: 3.2.1
 Tested up to: 3.2.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Adds a filter input field to the category box on the add/edit post page.
 
@@ -41,6 +41,9 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 
 == Changelog ==
 
+= 1.0.2 =
+* Adding support for custom post types & tidying up code a little.
+
 = 1.0.1 =
 * Moved JS to bottom of page.
 
@@ -48,6 +51,9 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 * Inital Release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Support for custom post types.
 
 = 1.0.1 =
 Should be a little faster to load.
