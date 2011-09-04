@@ -40,6 +40,9 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 
 == Changelog ==
 
+= 1.0.3 =
+* Just a small update
+
 = 1.0.2 =
 * Adding support for custom post types & tidying up code a little.
 
@@ -50,6 +53,8 @@ Either empty the field labeled "filter", or click the "clear" link next to it.
 * Inital Release
 
 == Upgrade Notice ==
+= 1.0.3 =
+Just an update for app themes - no big need to upgrade.
 
 = 1.0.2 =
 Support for custom post types.
