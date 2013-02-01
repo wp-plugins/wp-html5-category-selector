@@ -1,8 +1,8 @@
 === WP HTML5 Category Selector ===
 Contributors: Rogem002
 Tags: html5,categories,filter,post,category
-Requires at least: 3.4.1
-Tested up to: 3.4.1
+Requires at least: 3.5
+Tested up to: 3.5
 
 Adds a filter input field to the category box on the add/edit post page.
 
@@ -31,13 +31,17 @@ Just type in the field labeled "filter". As you type it will filter.
 
 = How do I get all my categories back? =
 
-Either empty the field labeled "filter", or click the "clear" link next to it.
+Either empty the field labeled "filter".
 
 == Screenshots ==
 
 1. Screenshot of the field it adds.
 
 == Changelog ==
+
+= 1.2.0 =
+* Made filter box a search type, so removed the filter button. 
+* Removed twitter link on plugins page.
 
 = 1.1.0 =
 * Custom post type support

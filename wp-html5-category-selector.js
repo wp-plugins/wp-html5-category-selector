@@ -3,12 +3,12 @@
 	if($("#category-all").length > 0){
 	
 		// Inject the filtering field.
-		$("#category-all").after('<div id="category-filter"><label>'+objectL10n.filter+': <input type="text" id="filterCats" placeholder="'+objectL10n.type_to_filter+'" /></label> <a class="clear button">'+objectL10n.clear+'</a></div>');
+		$("#category-all").after('<div id="category-filter"><label><!--'+objectL10n.filter+': --><input type="search" id="filterCats" placeholder="'+objectL10n.type_to_filter+'" /></label> <!--<a class="clear button">'+objectL10n.clear+'</a>--></div>');
 		
 		// Cache the elements we use often.
 		var $filterCats = $("#filterCats");
 		var $categorydiv_selectit = $("#categorydiv .selectit");
-		var $categoryFilter_clear = $("#category-filter .clear");
+		//var $categoryFilter_clear = $("#category-filter .clear");
 		
 		// Updates the shown categories based on the filter value.
 		function updateFiltered(){		
@@ -34,9 +34,9 @@
 		$filterCats.mouseout(updateFiltered);
 	
 		// Support the clear button
-		$categoryFilter_clear.click(function(){
-			$filterCats.val('');
-			$filterCats.trigger('keyup');
-		});	
+		//$categoryFilter_clear.click(function(){
+		//	$filterCats.val('');
+		//	$filterCats.trigger('keyup');
+		//});	
 	}
 })(jQuery);
